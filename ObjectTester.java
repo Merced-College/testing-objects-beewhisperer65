@@ -1,1 +1,3 @@
-//write your code here
+public class ObjectTester {
+    
+}
