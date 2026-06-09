@@ -4,3 +4,8 @@
 Write your answers to your reflection questions here. Write your name, the date and the answers.
 
 Make sure to push your code to your repo!
+
+Brendan Hulse, 6/9/26
+
+Q1: Printing an object that doesn't contain a toString causes the program to use Java's default toString. Which is why you get the object's type @ a hash code. That's what Java will always do if you don't give it its own way to print it.
+
