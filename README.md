@@ -14,3 +14,6 @@ Q2: name and breed (Strings) were null and age (int) was 0. Primitive types stor
 Experiment: The constructor Dog() is undefined. We gave it a way to construct, thereby overriding the default, and then tried to use a default that we can't get to anymore.
 
 Q3: We overrode the java default so we're now using our own default constructor, meaning that null became specific strings (we kept 0 as the int default but we could have done like -1 to show it wasn't set yet.)
+
+Q4: Similar to the constructor, since we changed the toString method from the java default, the time we were using it in part one is now showing the same printout as part 4. Overried is a useful but unnecessary flag that notifies the compiler that we were trying to override something from a higher/deeper level. If it throws an error that there's nothing to override, we might have typod something which messes us up.
+

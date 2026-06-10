@@ -14,4 +14,9 @@ public class Dog {
         this.age = age;
         this.breed = breed;
     }
+
+    @Override // Compiler checks to make sure it's actually finding the default setting
+    public String toString() { // Our way of printing this object
+        return "Dog{name='" + name + "', age=" + age + ", breed='" + breed + "'}";
+    }
 }

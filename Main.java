@@ -5,11 +5,11 @@ public class Main {
         Dog dog1 = new Dog(); // Empty Object
 
         System.out.println("Print object directly:");
-        System.out.println(dog1); // Prints the location
+        System.out.println(dog1); // Prints the location (no longer gives location post toString method)
 
         // Checkpoint 1
         Dog d1 = new Dog();
-        System.out.println("\nDefaults for d1 variables"); // Check what the object automatically assigns. (no longer functions post constructor)
+        System.out.println("\nDefaults for d1 variables"); // Check what the object automatically assigns. (no longer gives java default post constructor)
         System.out.println("name = " + d1.name); // null
         System.out.println("age = " + d1.age); // 0
         System.out.println("breed = " + d1.breed); // null
@@ -24,6 +24,11 @@ public class Main {
         System.out.println("name = " + d3.name + ", age = " + d3.age + ", breed = " + d3.breed);
 
         // Checkpoint 3
+        System.out.println("\nPrinting objects after overriding toString():");
+        System.out.println("d2 = " + d2);
+        System.out.println("d3 = " + d3); // will print the things in the object rather than the memory spot
+
+        // Checkpoint 4
         
 
 	}
