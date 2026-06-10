@@ -1,7 +1,7 @@
 public class Dog {
-    public String name;
-    public int age;
-    public String breed; // 3 variables, two strings and an int. All public for initial tests, private is correct.
+    private String name;
+    private int age;
+    private String breed; // Keep those grubby hands off my private data!
 
     public Dog() { // Default state
         name = "Unknown";
@@ -19,4 +19,13 @@ public class Dog {
     public String toString() { // Our way of printing this object
         return "Dog{name='" + name + "', age=" + age + ", breed='" + breed + "'}";
     }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+
+    public String getBreed() { return breed; }
+    public void setBreed(String breed) { this.breed = breed; } // Setters and getters to keep main's fingies out
 }

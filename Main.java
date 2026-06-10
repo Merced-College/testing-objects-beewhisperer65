@@ -10,18 +10,18 @@ public class Main {
         // Checkpoint 1
         Dog d1 = new Dog();
         System.out.println("\nDefaults for d1 variables"); // Check what the object automatically assigns. (no longer gives java default post constructor)
-        System.out.println("name = " + d1.name); // null
-        System.out.println("age = " + d1.age); // 0
-        System.out.println("breed = " + d1.breed); // null
+        System.out.println("name = " + d1.getName()); // null
+        System.out.println("age = " + d1.getAge()); // 0
+        System.out.println("breed = " + d1.getBreed()); // null
 
         // Checkpoint 2
         Dog d2 = new Dog(); // Default aka empty constructor
         System.out.println("\nd2 after default constructor:");
-        System.out.println("name = " + d2.name + ", age = " + d2.age + ", breed = " + d2.breed);
+        System.out.println("name = " + d2.getName() + ", age = " + d2.getAge() + ", breed = " + d2.getBreed());
 
         Dog d3 = new Dog("Rex", 4, "Collie"); // All data constructor
         System.out.println("\nd3 after parameterized constructor:");
-        System.out.println("name = " + d3.name + ", age = " + d3.age + ", breed = " + d3.breed);
+        System.out.println("name = " + d3.getName() + ", age = " + d3.getAge() + ", breed = " + d3.getBreed());
 
         // Checkpoint 3
         System.out.println("\nPrinting objects after overriding toString():");
@@ -29,6 +29,13 @@ public class Main {
         System.out.println("d3 = " + d3); // will print the things in the object rather than the memory spot
 
         // Checkpoint 4
+        // Changed whole file from direct mutation and reading to getting and setting.
+        System.out.println("\nMutating private fields through getteres and setters:");
+        d3.setAge(5); // Now telling Dog objects to do the work and keeping main's fingers out.
+        d3.setName("Max");
+        System.out.println("After mutation, d3 = " + d3);
+
+        // Checkpoint 5
         
 
 	}
